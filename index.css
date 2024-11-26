@@ -1,0 +1,449 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url(imgs/busay-pics/sattorre-falls2.jpg);
+    background-size: cover; /* Ensure the image covers the screen */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-attachment: fixed; /* Keeps background fixed while scrolling */
+    background-position: center; /* Default position for larger screens */
+    color: #333;
+}
+
+/* Mobile view: Focus on the right side */
+@media (max-width: 768px) {
+    body {
+        background-position:center; /* Aligns the image to the right */
+    }
+}
+
+
+/* Modern Introduction Section */
+.modern-intro {
+    padding: 60px 20px;
+    /* background: linear-gradient(135deg, #00ffff, #002d42); */
+    background-color: #00000062;
+    background-size: cover;
+    color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+.intro-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.intro-text {
+    max-width: 600px;
+    display: grid;
+    place-items: center;
+    height: 520px;
+    color: #F5F5DC;
+}
+
+.intro-text h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.intro-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.intro-image {
+    flex: 1 1 400px;
+    max-width: 500px;
+}
+
+.intro-image img {
+    width: 250px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.intro-image img:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .intro-container {
+        align-items: center;
+        text-align: center;
+    }
+
+    .intro-text, .intro-image {
+        max-width: 100%;
+    }
+
+    .intro-text h1 {
+        font-size: 2.2rem;
+    }
+
+    .intro-text p {
+        font-size: 1.1rem;
+    }
+}
+
+
+/* Section Titles */
+.section {
+    padding: 50px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #4a2c2a;
+}
+.section hr {
+    width: 50px;
+    border: 3px solid #4a2c2a;
+    margin: 0 auto 20px;
+    border-radius: 3px;
+}
+
+/* Welcome Section */
+.welcome-section {
+    background-color: #c8e2fb;
+    padding: 50px;
+    text-align: center;
+}
+.welcome-section h1 {
+    font-size: 2.5em;
+    color: #4a2c2a;
+}
+.welcome-section p {
+    font-size: 1.2em;
+    color: #222222;
+    margin-top: 10px;
+}
+
+
+
+.cta-button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+/* Section Titles */
+.section {
+    padding: 50px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.568);
+}
+
+.section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: rgb(0, 53, 7);
+}
+.section hr {
+    width: 50px;
+    border: 3px solid #FFD700;
+    margin: 0 auto 20px;
+    border-radius: 3px;
+}
+
+
+.info {
+    border-radius: 10px;
+    width: 100%;
+    margin: 0 auto; /* Centers horizontally */
+    text-align: center; /* Centers the text inside the div */
+}
+.info p{padding: 20px;
+    width: 500px;
+    margin: 0 auto; /* Centers horizontally */
+    text-align: center; /* Centers the text inside the div */
+}
+
+@media (max-width: 500px){
+    .info p{
+        padding: auto;
+        width: 270px;
+        margin: 0 auto; /* Centers horizontally */
+        text-align: center; /* Centers the text inside the div */
+    }
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.product-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+.product-card p {
+    font-weight: 600;
+    margin: 10px 0;
+}
+/* Promotional Poster */
+.promo img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+@media (min-width: 400x){
+    .video-container video {
+        width: 80%;
+    }
+}
+
+
+
+/* Delivery Information Section */
+.delivery-info {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    margin-top: -50px;
+    max-width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid green /* Subtle divider */
+}
+
+
+
+.delivery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+@media (min-width: 769px) {
+    .delivery-container {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+.delivery-text {
+    flex: 1 1 500px;
+    max-width: 600px;
+}
+
+.delivery-text h2 {
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.delivery-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+.delivery-map {
+    flex: 1 1 400px;
+    max-width: 500px;
+    text-align: center;
+}
+
+.delivery-map h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.delivery-map img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.delivery-map {
+    text-align: center; /* Center the image */
+    margin-bottom: 20px; /* Add bottom margin */
+}
+
+.delivery-map-img {
+    max-width: 100%; /* Allow image to scale to container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    cursor: pointer; /* Make the image clickable */
+}
+
+/* Modal styles */
+.modal {
+    margin-top: 50px;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Black with opacity */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+.modal-content {
+    margin: 5% auto; /* 5% from the top and centered */
+    display: block; /* Block level element */
+    width: 80%; /* Max width of the image */
+    max-width: 700px; /* Maximum width of the image */
+    height: auto; /* Automatic height */
+    border: 1px solid #888; /* Gray border */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow effect */
+}
+
+.close {
+    color: #ffffff;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+    .close{
+        margin-right: 200px;
+    }
+}
+
+.close:hover,
+.close:focus {
+    color: blue;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .delivery-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .delivery-text, .delivery-map {
+        max-width: 100%;
+    }
+
+    .delivery-text h2 {
+        font-size: 2rem;
+    }
+
+    .delivery-text p {
+        font-size: 1rem;
+    }
+}
+
+
+.delivery-map {
+    text-align: center; /* Center the image */
+    margin-bottom: 20px; /* Add bottom margin */
+}
+
+.delivery-map-img {
+    max-width: 100%; /* Allow image to scale to container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+
+
+
+/* Floating Button */
+.floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 18px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.floating-btn:hover {
+    background-color: #218838;
+}
+#footer {
+    background-color: rgb(31, 31, 31);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#footer a{
+    text-decoration: none;
+    color: white;
+}
+
+#footer a:hover{
+    text-decoration: underline;
+    color: blue;
+}
